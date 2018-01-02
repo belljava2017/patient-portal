@@ -85,8 +85,10 @@ public class PRRepository {
 			ps.setString(1, info.getFullname());
 			ps.setString(2, info.getPassword());
 			ps.setString(3, info.getEmail());
+			//ps.setString(4, info.getClass());
 			
 			result = ps.executeUpdate();
+			
 			System.out.println("inserted successfully");
 		} catch (SQLException e) {
 			System.out.println("exception in insertion");
